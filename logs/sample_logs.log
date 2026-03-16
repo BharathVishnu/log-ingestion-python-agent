@@ -1,0 +1,5 @@
+Mar 16 12:45:23 server1 sshd[1234]: Failed password for invalid user admin from 192.168.1.15 port 22 ssh2
+Denied connection from 10.0.0.5 to port 22 protocol TCP
+192.168.1.20 - - [16/Mar/2026:12:22:01] "GET /login HTTP/1.1" 401
+User john logged in successfully from 192.168.1.25
+AWS ConsoleLogin Failure user=admin sourceIP=8.8.8.8
