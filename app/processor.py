@@ -1,11 +1,9 @@
-from app.llm.classifier import classify_log
-from app.llm.normalizer import normalize_log
-from app.enricher import enrich_log
-from app.database import save_log
-
-
-from app.router import route_log
-from app.destination import send_alert, send_to_dashboard, store_log
+from llm.classifier import classify_log
+from llm.normalizer import normalize_log
+from enricher import enrich_log
+from database import save_log
+from router import route_log
+from destination import send_alert, send_to_dashboard, store_log
 
 def process_log(log):
 
