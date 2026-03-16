@@ -2,12 +2,14 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 import threading
+import os
 
 from file_ingestor import tail_log
 from processor import process_log
 
 
-LOG_FILE = "logs/sample_logs.log"
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+LOG_FILE = os.path.join(BASE_DIR, "logs", "sample_logs.log")
 
 
 def start_pipeline():
