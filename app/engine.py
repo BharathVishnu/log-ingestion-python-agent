@@ -4,8 +4,29 @@ from llm_engine import llm_parse
 from regex_builder import build_regex
 from rule_store import save_rule
 from util import save_output
+from vector_store.store import search_similar, add_to_store
+import re
+from regex_engine import match_log
 
 def process_log(log):
+
+    similar = search_similar(log)
+
+    if similar:
+        print("RAG matched")
+
+        match = re.search(similar["regex"], log)
+
+        if match:
+            data = {}
+
+            for i, field in enumerate(similar["parsed"].keys()):
+                try:
+                    data[field] = match.group(i + 1)
+                except:
+                    data[field] = None
+
+            return data
 
     parsed = match_log(log)
 
@@ -17,8 +38,9 @@ def process_log(log):
     parsed = llm_parse(log)
 
     if not parsed:
-        return {"event": "unknown"}
+        parsed = {"event": "unknown"}
 
+    
     regex = build_regex(log, parsed)
 
     rule = {
@@ -26,13 +48,10 @@ def process_log(log):
         "fields": list(parsed.keys())
     }
 
-    save_rule(rule)
 
+    add_to_store(log, parsed, regex)
     save_output(log,parsed)
 
-    print("Learned new pattern")
+    print("     Learned + stored in RAG")
 
     return parsed
-
-
-

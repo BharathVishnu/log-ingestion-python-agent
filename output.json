@@ -1,0 +1,102 @@
+[
+    {
+        "data": {
+            "ip": "192.168.1.1",
+            "request_method": "GET",
+            "request_url": "/index.html",
+            "http_version": "HTTP/1.1",
+            "status_code": 200,
+            "response_size": 2326
+        },
+        "timestamp": "2026-03-17T19:37:46.613348"
+    },
+    {
+        "data": {
+            "ip": "10.0.0.2",
+            "timestamp": "[12/Nov/2025:09:12:11]",
+            "method": "POST",
+            "path": "/login",
+            "httpVersion": "HTTP/1.1",
+            "status": 401,
+            "bytesSent": 721
+        },
+        "timestamp": "2026-03-17T19:37:58.026401"
+    },
+    {
+        "data": {
+            "ip": "172.16.0.5",
+            "user": "-",
+            "date": "15/Dec/2025",
+            "time": "22:45:01",
+            "method": "GET",
+            "path": "/admin",
+            "http_version": "1.1",
+            "status_code": 403,
+            "size": 1024
+        },
+        "timestamp": "2026-03-17T19:38:08.531878"
+    },
+    {
+        "data": {
+            "remoteAddress": "203.0.113.10",
+            "timestamp": "01/Jan/2026:11:00:00",
+            "method": "DELETE",
+            "uriPath": "/api/user",
+            "protocol": "HTTP/1.1",
+            "status": 500,
+            "responseSize": 300
+        },
+        "timestamp": "2026-03-17T19:38:19.973000"
+    },
+    {
+        "data": {
+            "ip": "192.168.1.2",
+            "httpMethod": "GET",
+            "url": "/home",
+            "statusCode": 200,
+            "responseSize": 1234
+        },
+        "timestamp": "2026-03-17T19:38:27.420101"
+    },
+    {
+        "data": {
+            "ip": "10.0.0.3",
+            "httpMethod": "POST",
+            "uri": "/api/login",
+            "httpVersion": "HTTP/1.1",
+            "statusCode": 200,
+            "responseSize": 500
+        },
+        "timestamp": "2026-03-17T19:38:38.621875"
+    },
+    {
+        "data": {
+            "remote_ip": "172.16.0.6",
+            "method": "PUT",
+            "path": "/api/update",
+            "http_version": "HTTP/1.1",
+            "status_code": 201,
+            "response_size": 600
+        },
+        "timestamp": "2026-03-17T19:38:47.975065"
+    },
+    {
+        "data": {
+            "error": {
+                "message": "syntax error near FROM",
+                "type": "QueryExecutionError"
+            },
+            "query": {
+                "sql": "SELECT * FROM users"
+            }
+        },
+        "timestamp": "2026-03-17T19:38:58.078467"
+    },
+    {
+        "data": {
+            "Query": "SELECT * FROM orders",
+            "Status": "executed successfully"
+        },
+        "timestamp": "2026-03-17T19:39:08.056911"
+    }
+]

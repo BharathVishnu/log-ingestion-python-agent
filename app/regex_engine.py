@@ -1,6 +1,5 @@
 import re
 from rule_store import load_rules
-
 def match_log(log):
 
     for rule in load_rules():
