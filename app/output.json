@@ -1,0 +1,200 @@
+[
+    {
+        "data": {
+            "event": "failed_login",
+            "username": "admin",
+            "ip_address": "192.168.1.10"
+        },
+        "timestamp": "2026-03-17T18:56:57.894848"
+    },
+    {
+        "data": {
+            "username": "john",
+            "ip_address": "10.0.0.5",
+            "event_type": "login_success"
+        },
+        "timestamp": "2026-03-17T18:57:04.840018"
+    },
+    {
+        "data": {
+            "event": "Authentication Failure",
+            "username": "root",
+            "ip_address": "203.0.113.5",
+            "port": 22,
+            "protocol": "ssh2"
+        },
+        "timestamp": "2026-03-17T18:57:12.963169"
+    },
+    {
+        "data": {
+            "user": "guest",
+            "ip_address": "192.168.1.50"
+        },
+        "timestamp": "2026-03-17T18:57:18.989436"
+    },
+    {
+        "data": {
+            "ip": "10.0.0.2",
+            "timestamp": "[12/Nov/2025:09:12:11]",
+            "method": "POST",
+            "url": "/login",
+            "http_version": "HTTP/1.1",
+            "status_code": 401,
+            "response_size": 721
+        },
+        "timestamp": "2026-03-17T18:57:45.554758"
+    },
+    {
+        "data": {
+            "Source_IP": "192.168.1.100",
+            "Destination_IP": "10.0.0.1",
+            "Destination_Port": 443,
+            "Event": "Firewall blocked connection"
+        },
+        "timestamp": "2026-03-17T18:57:53.201414"
+    },
+    {
+        "data": {
+            "service": "nginx",
+            "status": "started successfully"
+        },
+        "timestamp": "2026-03-17T18:57:58.898065"
+    },
+    {
+        "data": {
+            "Event": "Disk usage exceeded",
+            "Device": "/dev/sda1",
+            "Threshold": 90,
+            "Percentage": "%"
+        },
+        "timestamp": "2026-03-17T18:58:05.840524"
+    },
+    {
+        "data": {
+            "Event": "MemoryLeak",
+            "Process": "java_app"
+        },
+        "timestamp": "2026-03-17T18:58:12.238597"
+    },
+    {
+        "data": {
+            "InstanceId": "i-1234567890abcdef",
+            "Region": "us-east-1"
+        },
+        "timestamp": "2026-03-17T18:58:19.612358"
+    },
+    {
+        "data": {
+            "Event": "Deployment failure",
+            "Service": "auth-service",
+            "Reason": "timeout"
+        },
+        "timestamp": "2026-03-17T18:58:26.530573"
+    },
+    {
+        "data": {
+            "pod_name": "nginx-abc123",
+            "event_type": "restarted",
+            "reason": "crash"
+        },
+        "timestamp": "2026-03-17T18:58:33.587527"
+    },
+    {
+        "data": {
+            "event": "Autoscaling",
+            "type": "triggered",
+            "action": "added",
+            "num_instances": 2
+        },
+        "timestamp": "2026-03-17T18:58:40.226993"
+    },
+    {
+        "data": {
+            "InstanceId": "i-abcdef1234567890",
+            "Region": "eu-west-1"
+        },
+        "timestamp": "2026-03-17T18:58:47.200316"
+    },
+    {
+        "data": {
+            "event": "Deployment succeeded",
+            "service": "payment-service"
+        },
+        "timestamp": "2026-03-17T18:58:52.887289"
+    },
+    {
+        "data": {
+            "user": "dbadmin",
+            "database": "sales_db",
+            "ip_address": "192.168.1.20"
+        },
+        "timestamp": "2026-03-17T18:59:00.794307"
+    },
+    {
+        "data": {
+            "Error": "syntax error near FROM",
+            "Query": "SELECT * FROM users"
+        },
+        "timestamp": "2026-03-17T18:59:10.297905"
+    },
+    {
+        "data": {
+            "transaction_status": "committed",
+            "order_id": 12345
+        },
+        "timestamp": "2026-03-17T18:59:22.387498"
+    },
+    {
+        "data": {
+            "query": {
+                "text": "SELECT * FROM orders"
+            },
+            "status": "executed successfully",
+            "type": "query",
+            "result_type": "json"
+        },
+        "timestamp": "2026-03-17T18:59:31.168769"
+    },
+    {
+        "data": {
+            "From": "alice@example.com",
+            "To": "bob@example.com"
+        },
+        "timestamp": "2026-03-17T18:59:36.915879"
+    },
+    {
+        "data": {
+            "event": "Spam detection",
+            "sender": "spammer@bad.com"
+        },
+        "timestamp": "2026-03-17T18:59:43.493162"
+    },
+    {
+        "data": {
+            "event": "User notification sent",
+            "recipient": "john@example.com"
+        },
+        "timestamp": "2026-03-17T18:59:48.992869"
+    },
+    {
+        "data": {
+            "username": "admin",
+            "email": "example.com",
+            "event_type": "password_reset_requested"
+        },
+        "timestamp": "2026-03-17T18:59:55.761403"
+    },
+    {
+        "data": {
+            "event": "email_delivery_failure",
+            "user": "test@example.com"
+        },
+        "timestamp": "2026-03-17T19:00:02.090423"
+    },
+    {
+        "data": {
+            "log_message": "Something weird happened in the system"
+        },
+        "timestamp": "2026-03-17T19:00:17.271350"
+    }
+]

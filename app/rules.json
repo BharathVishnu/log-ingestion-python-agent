@@ -1,0 +1,198 @@
+[
+  {
+    "regex": "(.+?)",
+    "fields": [
+      "log_message"
+    ]
+  },
+  {
+    "regex": "Email delivery failed for user ([\\w\\.-]+@[\\w\\.-]+)",
+    "fields": [
+      "event",
+      "user"
+    ]
+  },
+  {
+    "regex": "Password reset requested for user (\\w+)@(.+?)",
+    "fields": [
+      "username",
+      "email",
+      "event_type"
+    ]
+  },
+  {
+    "regex": "(.+?) to ([\\w\\.-]+@[\\w\\.-]+)",
+    "fields": [
+      "event",
+      "recipient"
+    ]
+  },
+  {
+    "regex": "Spam detected from sender ([\\w\\.-]+@[\\w\\.-]+)",
+    "fields": [
+      "event",
+      "sender"
+    ]
+  },
+  {
+    "regex": "Email sent from ([\\w\\.-]+@[\\w\\.-]+) to ([\\w\\.-]+@[\\w\\.-]+)",
+    "fields": [
+      "From",
+      "To"
+    ]
+  },
+  {
+    "regex": "Query (.+?) SELECT * FROM orders",
+    "fields": [
+      "query",
+      "status",
+      "type",
+      "result_type"
+    ]
+  },
+  {
+    "regex": "Transaction (\\w+) successfully for order_id (\\d+)",
+    "fields": [
+      "transaction_status",
+      "order_id"
+    ]
+  },
+  {
+    "regex": "Error executing query (.+?): (.+?)",
+    "fields": [
+      "Error",
+      "Query"
+    ]
+  },
+  {
+    "regex": "User (\\w+) connected to database (\\w+) from ([0-9.]+)",
+    "fields": [
+      "user",
+      "database",
+      "ip_address"
+    ]
+  },
+  {
+    "regex": "(.+?) for service (.+?)",
+    "fields": [
+      "event",
+      "service"
+    ]
+  },
+  {
+    "regex": "EC2 instance (.+?) stopped in region (.+?)",
+    "fields": [
+      "InstanceId",
+      "Region"
+    ]
+  },
+  {
+    "regex": "(\\w+) (\\w+): (\\w+) (\\d+) new instances",
+    "fields": [
+      "event",
+      "type",
+      "action",
+      "num_instances"
+    ]
+  },
+  {
+    "regex": "Kubernetes pod (.+?) (\\w+) due to (\\w+)",
+    "fields": [
+      "pod_name",
+      "event_type",
+      "reason"
+    ]
+  },
+  {
+    "regex": "Deployment failed for service (.+?) due to (\\w+)",
+    "fields": [
+      "Event",
+      "Service",
+      "Reason"
+    ]
+  },
+  {
+    "regex": "EC2 instance (.+?) started in region (.+?)",
+    "fields": [
+      "InstanceId",
+      "Region"
+    ]
+  },
+  {
+    "regex": "Memory leak detected in process (\\w+)",
+    "fields": [
+      "Event",
+      "Process"
+    ]
+  },
+  {
+    "regex": "(.+?) (\\d+)(.+?) on (.+?)",
+    "fields": [
+      "Event",
+      "Device",
+      "Threshold",
+      "Percentage"
+    ]
+  },
+  {
+    "regex": "Service (\\w+) (.+?)",
+    "fields": [
+      "service",
+      "status"
+    ]
+  },
+  {
+    "regex": "(.+?) from ([0-9.]+) to ([0-9.]+) port (\\d+)",
+    "fields": [
+      "Source_IP",
+      "Destination_IP",
+      "Destination_Port",
+      "Event"
+    ]
+  },
+  {
+    "regex": "([0-9.]+) - - (.+?) \"(\\w+) (.+?) (.+?)\" (\\d+) (\\d+)",
+    "fields": [
+      "ip",
+      "timestamp",
+      "method",
+      "url",
+      "http_version",
+      "status_code",
+      "response_size"
+    ]
+  },
+  {
+    "regex": "Invalid user (\\w+) from ([0-9.]+)",
+    "fields": [
+      "user",
+      "ip_address"
+    ]
+  },
+  {
+    "regex": "Failed password for (\\w+) from ([0-9.]+) port (\\d+) (.+?)",
+    "fields": [
+      "event",
+      "username",
+      "ip_address",
+      "port",
+      "protocol"
+    ]
+  },
+  {
+    "regex": "User (\\w+) logged in successfully from ([0-9.]+)",
+    "fields": [
+      "username",
+      "ip_address",
+      "event_type"
+    ]
+  },
+  {
+    "regex": "User (\\w+) failed login from ([0-9.]+)",
+    "fields": [
+      "event",
+      "username",
+      "ip_address"
+    ]
+  }
+]

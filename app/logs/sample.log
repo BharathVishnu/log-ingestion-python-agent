@@ -1,0 +1,58 @@
+User admin failed login from 192.168.1.10
+User john logged in successfully from 10.0.0.5
+Failed password for root from 203.0.113.5 port 22 ssh2
+Invalid user guest from 192.168.1.50
+User alice failed login from 172.16.0.2
+User root logged in successfully from 192.168.1.20
+User guest failed login from 10.0.0.8
+User admin logged in successfully from 192.168.1.11
+Failed password for admin from 203.0.113.6 port 22 ssh2
+Invalid user test from 172.16.0.3
+192.168.1.1 - - [10/Oct/2025:13:55:36] "GET /index.html HTTP/1.1" 200 2326
+10.0.0.2 - - [12/Nov/2025:09:12:11] "POST /login HTTP/1.1" 401 721
+172.16.0.5 - - [15/Dec/2025:22:45:01] "GET /admin HTTP/1.1" 403 1024
+203.0.113.10 - - [01/Jan/2026:11:00:00] "DELETE /api/user HTTP/1.1" 500 300
+192.168.1.2 - - [11/Oct/2025:10:20:30] "GET /home HTTP/1.1" 200 1234
+10.0.0.3 - - [12/Nov/2025:11:22:33] "POST /api/login HTTP/1.1" 200 500
+172.16.0.6 - - [15/Dec/2025:20:10:15] "PUT /api/update HTTP/1.1" 201 600
+203.0.113.11 - - [02/Jan/2026:09:30:00] "GET /dashboard HTTP/1.1" 200 2048
+Firewall blocked connection from 192.168.1.100 to 10.0.0.1 port 443
+Allowed TCP connection from 10.1.1.1 to 8.8.8.8 port 53
+Connection from 10.0.0.5 to 192.168.1.1 port 3306 established successfully
+Connection attempt from 172.16.0.10 to 192.168.1.5 port 22 denied
+Firewall blocked connection from 10.0.0.9 to 172.16.0.8 port 80
+Allowed TCP connection from 192.168.1.12 to 8.8.4.4 port 53
+Service nginx started successfully
+Service mysql failed to start due to permission error
+Disk usage exceeded 90% on /dev/sda1
+CPU usage reached 95% on server node-1
+Memory leak detected in process java_app
+Service redis started successfully
+Service apache failed to start due to missing config
+Disk usage exceeded 85% on /dev/sdb1
+CPU usage reached 92% on server node-2
+EC2 instance i-1234567890abcdef started in region us-east-1
+Deployment failed for service auth-service due to timeout
+Kubernetes pod nginx-abc123 restarted due to crash
+Autoscaling triggered: added 2 new instances
+EC2 instance i-abcdef1234567890 stopped in region eu-west-1
+Deployment succeeded for service payment-service
+User dbadmin connected to database sales_db from 192.168.1.20
+Error executing query SELECT * FROM users: syntax error near FROM
+Connection timeout while accessing database inventory_db
+Transaction committed successfully for order_id 12345
+User analytics connected to database metrics_db from 10.0.0.7
+Query executed successfully SELECT * FROM orders
+Email sent from alice@example.com to bob@example.com
+Spam detected from sender spammer@bad.com
+User notification sent to john@example.com
+Password reset requested for user admin@example.com
+Email delivery failed for user test@example.com
+Something weird happened in the system
+Unexpected error occurred
+Unknown event triggered in module xyz
+Random log with no clear format
+Something failed in subsystem A
+Unknown failure in backend service
+Unexpected shutdown detected
+Service restart triggered automatically
